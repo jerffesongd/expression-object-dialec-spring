@@ -1,0 +1,14 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<div th:text="|Number: ${numberRandom}|"></div>
+	<div th:if="${#number.isEven(numberRandom)}">Is Even</div>
+	<div th:if="${!#number.isEven(numberRandom)}">Is not Even</div>
+	
+</body>
+</html>
