@@ -6,9 +6,7 @@
 </head>
 <body>
 
-	<div th:text="|Number: ${numberRandom}|"></div>
-	<div th:if="${#number.isEven(numberRandom)}">Is Even</div>
-	<div th:if="${!#number.isEven(numberRandom)}">Is not Even</div>
+	<div th:text="${#number.isEven(numberRandom)}">Is Even</div>
 	
 </body>
 </html>
